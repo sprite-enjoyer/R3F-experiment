@@ -1,0 +1,42 @@
+$Fashion-1-hex: #A62454;
+$Fashion-2-hex: #BF8FAA;
+$Fashion-3-hex: #BFB0BB;
+$Fashion-4-hex: #733B2F;
+$Fashion-5-hex: #0D0D0D;
+
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: $Fashion-3-hex;
+  display: flex;
+  justify-content: center;
+
+}
+
+.main {
+  margin-top: 20vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+  &__container {
+
+    height: 400px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    gap: 10px;
+    background-color: $Fashion-2-hex;
+
+  }
+
+}
