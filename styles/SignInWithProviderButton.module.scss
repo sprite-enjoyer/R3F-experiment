@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+.btn {
+
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    max-height: 50px;
+  }
+}

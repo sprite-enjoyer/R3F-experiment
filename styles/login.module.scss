@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
 $Fashion-1-hex: #A62454;
 $Fashion-2-hex: #BF8FAA;
 $Fashion-3-hex: #BFB0BB;
@@ -13,7 +16,8 @@ $Fashion-5-hex: #0D0D0D;
   background-color: $Fashion-3-hex;
   display: flex;
   justify-content: center;
-
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 .main {
@@ -36,6 +40,19 @@ $Fashion-5-hex: #0D0D0D;
     border-radius: 30px;
     gap: 10px;
     background-color: $Fashion-2-hex;
+
+    &__button-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    &__txt {
+      font-size: 2em;
+      margin-bottom: 5vh;
+      color: whitesmoke;
+    }
 
   }
 
