@@ -9,23 +9,15 @@ const Login = () => {
   const { data } = useSession();
 
   if (data) {
-    router.replace(`user/${data.user?.email}/profile`);
+    router.replace(`user/${data.user?.email}/profile?sessionExists=true&localSession=false`);
 
-    return <div style={{
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      width: "100vw",
-      height: "100vh",
-      position: "absolute",
-      top: "0",
-      left: "0",
-    }} >
+    return <div className={styles["loading"]} >
       <h1>Loading...</h1>
     </div>
   }
 
   else {
+
     return (
       <div className={styles["root"]} >
         <Container className={styles["main"]} >

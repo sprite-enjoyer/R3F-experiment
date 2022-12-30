@@ -40,3 +40,15 @@ $Fashion-5-hex: #0D0D0D;
   }
 
 }
+
+.loading {
+
+  display: "flex";
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: "absolute";
+  top: 0;
+  left: 0;
+}

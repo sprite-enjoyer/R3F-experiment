@@ -13,7 +13,6 @@ export default function App({
       <SessionProvider session={session}>
         <Component {...pageProps} />
         <Head><title>Chilling Room</title></Head>
-
       </SessionProvider>
     </NextUIProvider>
   )
