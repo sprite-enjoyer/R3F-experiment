@@ -2,9 +2,7 @@ import NextAuth, { AuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import SpotifyProvider from "next-auth/providers/spotify";
 import FacebookProvider from "next-auth/providers/facebook";
-import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import prismaClient from "../../../prisma/prisma";
-import { randomBytes, randomUUID } from "crypto";
+import DiscordProvider from "next-auth/providers/discord";
 
 export const authOptions: AuthOptions = {
 
@@ -20,6 +18,10 @@ export const authOptions: AuthOptions = {
     SpotifyProvider({
       clientId: process.env.SPOTIFY_ID ?? "couldn't find spotify id",
       clientSecret: process.env.SPOTIFY_SECRET ?? "couldn't find spotify secret"
+    }),
+    DiscordProvider({
+      clientId: process.env.DISCORD_ID ?? "couldn't find discord id",
+      clientSecret: process.env.DISCORD_SECRET ?? "couldn't find discord secret"
     })
   ],
   secret: process.env.JWT_SECRET ?? "oh well",
